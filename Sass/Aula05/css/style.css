@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* configurando o MIXIN*/
+/*
+Variáveis do CSS */
+.texts h1 {
+  color: red;
+  font-size: -32px;
+  font-family: arial;
+  font-weight: lighter;
+}
+.texts p {
+  color: blue;
+  font-size: 22px;
+  font-family: "Source Code Pro";
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

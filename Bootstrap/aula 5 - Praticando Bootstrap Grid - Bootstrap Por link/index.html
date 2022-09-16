@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando uma Landing Page com Bootstrap</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/FAVICON-SPACEX.png" type="image/x-icon">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Somente após adicionar o !important, no CSS, que funcionou o ajuste do "Width" -->
+    <div class="container my-5 px-3 container1">
+
+        <!-- Img do Logo -->
+        <header class="text-center">
+            <img src="./img/logoOneBitDark.png" alt="logo-onebitecode" class="img-logo my-4">
+        </header>
+
+
+        <!-- Primeira Section -->
+        <section>
+            <p class="paragraph"> 1 - Qual o seu nome? </p>
+            <form>
+                <div class="input-group">
+                    <span class="input-group-text pe-4" id="fname">Primeiro Nome:</span>
+                    <input type="text" id="fname" name="fname" class="form-control" placeholder="Digite Aqui"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group py-3">
+                    <span class="input-group-text pe-5" id="lname">Sobrenome:</span>
+                    <input type="text" id="lname" name="lname" class="form-control" placeholder="Digite Aqui"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
+        </section>
+
+        <!-- Segunda Section -->
+        <section>
+            <p class="paragraph">2 - Qual o seu gênero?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="genero" id="masculino">
+                <label class="form-check-label" for="masculino">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="genero" id="feminino">
+                <label class="form-check-label" for="feminino">Feminino</label>
+            </div>
+            <div class="form-check pb-2">
+                <input class="form-check-input" type="radio" name="genero" id="nao_identificado">
+                <label class="form-check-label" for="nao-identificado">Prefiro Não Informar</label>
+            </div>
+        </section>
+
+        <!-- Terceira Section -->
+        <section>
+            <p class="paragraph">3 - Marque os treinamentos que você fez:</p>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="basico_astronauta">
+                <label class="form-check-label" for="basico_astronauta">Treinamento Basico de Astronauta</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="basico_fisico">
+                <label class="form-check-label" for="basico_fisico">Treinamento físico básico</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="avancado_astronauta">
+                <label class="form-check-label" for="avancado_astronauta">Treinamento avançado de astronauta</label>
+            </div>
+            <div class="form-check form-switch pb-2">
+                <input class="form-check-input" type="checkbox" role="switch" id="intenso_fisico">
+                <label class="form-check-label" for="intenso_fisico">Treinamento físico intenso</label>
+            </div>
+        </section>
+
+        <!-- Quarta Section -->
+        <section>
+            <p class="paragraph">4 - Quais você acha que são suas qualidades?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="option1" id="Proativo">
+                <label class="form-check-label" for="Proativo">Proativo</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="option2" id="Resistente">
+                <label class="form-check-label" for="Resistente">Resistente</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="option3" id="Não vomito fácil">
+                <label class="form-check-label" for="Não vomito fácil">Não vomito fácil</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="option4" id="Não temo marcian">
+                <label class="form-check-label" for="Não temo marcian">Não temo marciano</label>
+            </div>
+            <div class="form-check form-check-inline pb-2">
+                <input class="form-check-input" type="checkbox" value="option5" id="Já vi todos os star war">
+                <label class="form-check-label" for="Já vi todos os star war">Já vi todos os star wars</label>
+            </div>
+        </section>
+
+        <!-- Buttton -->
+        <div class="text-center">
+            <button type="button" class="btn btn-outline-danger my-4">Enviar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p class="paragraph">Feito por Leonardo Xavier &copy; OneBitCode todos os direitos reservados - 2022</p>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

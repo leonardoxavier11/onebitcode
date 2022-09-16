@@ -1,0 +1,32 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../img/backgroundLp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container1 {
+  max-width: 450px !important; /*Somente após adicionar o !important que funcionou o ajuste do "Width"*/
+  height: auto;
+  background-color: rgba(18, 17, 17, 0.668);
+  color: white;
+}
+
+.img-logo {
+  max-width: 200px;
+}
+
+.back {
+  background-color: rgb(228, 225, 225);
+}
+
+footer {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

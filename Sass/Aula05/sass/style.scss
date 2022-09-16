@@ -1,0 +1,24 @@
+/* configurando o MIXIN*/
+@mixin tetx-style($color, $font-size, $font-family) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+/*
+Variáveis do CSS */
+$color01: red;
+$color02: blue;
+
+
+.texts {
+    h1 {
+        @include tetx-style($color01, -32px, arial);
+
+        font-weight: lighter;
+    }
+    p {
+        @include tetx-style($color02, 22px, "Source Code Pro");
+        
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,24 @@
+.btn {
+    width: 125px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+
+    /* Usando Herança */
+    
+    &.btn-roxo {
+        background-color: purple;
+    }
+
+    &.btn-amarelo {
+        background-color: yellow;
+        color: black;
+    }
+
+    &.btn-azul {
+        background-color: blue;
+    }
+}

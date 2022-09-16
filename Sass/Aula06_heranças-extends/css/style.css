@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.btn {
+  width: 125px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+  /* Usando Herança */
+}
+.btn.btn-roxo {
+  background-color: purple;
+}
+.btn.btn-amarelo {
+  background-color: yellow;
+  color: black;
+}
+.btn.btn-azul {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
