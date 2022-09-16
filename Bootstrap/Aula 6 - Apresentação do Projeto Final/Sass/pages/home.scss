@@ -64,13 +64,13 @@
 
 .arrow2 {
     width: 95px;
-    transform: rotate(180deg);
+    transform: rotate(180deg); //Esse comando faz com que a img da seta vire em 180°
 }
 
 .footer {
     height: 10vh;
     background-color: black;
-    display: flex;
+    display: flex; //centralização dos containers filhos
     justify-content: center;
     align-items: center;
 
