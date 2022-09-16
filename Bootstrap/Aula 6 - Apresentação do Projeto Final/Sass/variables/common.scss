@@ -1,4 +1,31 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../../Imagens-projeto-onebitX/home/01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a {
+    color: $primarycolor-nav;
+    text-decoration: none;
+
+    &:hover {
+        color: $primarycolor-nav;
+    }
+
+}
+.container01 {
+    height: 100vh;
+    color: $primarycolor-main;
+}
+
+.home-img {
+    max-width: 240px;
+    max-height: 39px;
 }
