@@ -4,24 +4,21 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url(../../Imagens-projeto-onebitX/home/01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 a {
   color: white;
   text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: #b9b9b9;
 }
 
 .container01 {
   height: 100vh;
   color: white;
+  background-image: url(../../Imagens-projeto-onebitX/home/01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .home-img {
@@ -39,6 +36,58 @@ a:hover {
 .btn01 {
   width: 158px;
   height: 58px;
+  border: 2px white solid;
+}
+.btn01:hover {
+  font-weight: bold;
+  transition: 0s;
+}
+
+.arrow {
+  width: 95px;
+}
+
+.container02 {
+  height: 100vh;
+  color: white;
+  background-image: url(../../Imagens-projeto-onebitX/home/03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container03 {
+  height: 100vh;
+  color: white;
+  background-image: url(../../Imagens-projeto-onebitX/home/02.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container04 {
+  height: 100vh;
+  color: white;
+  background-image: url(../../Imagens-projeto-onebitX/home/04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow2 {
+  width: 95px;
+  transform: rotate(180deg);
+}
+
+.footer {
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

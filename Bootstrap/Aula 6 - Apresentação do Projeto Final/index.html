@@ -5,44 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Final Bootstrap</title>
 
-    <!-- CSS only -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./Imagens-projeto-onebitX/favicon.png">
+
+    <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- CSS Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- CSS local -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- LIB AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
-    <div class="container pt-4 container01">
-        <header>
-            <nav>
-                <a href="./index.html" class="me-5">
-                    <img src="./Imagens-projeto-onebitX/logo-obc-2021-darkbg.png" alt="logo-obc" class="home-img">
-                </a>
-                <a href="./folders-html/falcon9.html" class="me-5">Falcon 9</a>
-                <a href="./folders-html/human-space-fligth.html">Human Space Fligth</a>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <div class="box01">
-                    <h5>LANÇAMENTO A CAMINHO</h5>
-                    <h1 class="mb-5">MISSÃO EQUIPE-3</h1>
-                    <button type="button" class="btn btn-outline-light btn01">Saiba Mais</button>
-                </div>
-            </section>
-        </main>
-    </div>
+    <main>
+
+        <!-- Primeira Section da LP, o texto vem de baixo para cima. Foi acrescentado setas para melhor manuseio das páginas -->
+        <div class="container-fluid pt-4 container01" id="nextcontainer4">
+            <div class="container">
+                <nav>
+                    <a href="./index.html" class="me-5">
+                        <img src="./Imagens-projeto-onebitX/logo-obc-2021-darkbg.png" alt="logo-obc" class="home-img">
+                    </a>
+                    <a href="./folders-html/falcon9.html" class="me-2">Falcon 9</a>
+                    <a href="./folders-html/human-space-fligth.html">Human Space Fligth</a>
+                </nav>
+                <section data-aos="fade-up" data-aos-duration="2000">
+                    <div class="box01">
+                        <h5>LANÇAMENTO A CAMINHO</h5>
+                        <h1 class="mb-5">MISSÃO EQUIPE-3</h1>
+                        <button type="button" class="btn btn-outline-light btn01">SAIBA MAIS</button>
+                    </div>
+                    <div class="text-center">
+                        <a href="#nextcontainer"><img src="./Imagens-projeto-onebitX/home/arrowDown.gif"
+                                alt="arrou-pulse" class="arrow"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Segunda Section da LP, o texto vem da direto para esquerda. Foi acrescentado setas para melhor manuseio das páginas -->
+        <div class="container-fluid pt-4 container02" id="nextcontainer">
+            <div class="container">
+                <section data-aos="fade-right" data-aos-duration="2000">
+                    <div class="box01">
+                        <h5>MISSÃO CONCLUÍDA</h5>
+                        <h1>MISSÃO EQUIPE-2</h1>
+                        <h1 class="mb-5">RETORNOU PARA A TERRA</h1>
+                        <button type="button" class="btn btn-outline-light btn01">SAIBA MAIS</button>
+                    </div>
+                    <div class="text-center">
+                        <a href="#nextcontainer2"><img src="./Imagens-projeto-onebitX/home/arrowDown.gif"
+                                alt="arrou-pulse" class="arrow"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Terceira Section da LP, o texto vem de cima para baixo. Foi acrescentado setas para melhor manuseio das páginas -->
+        <div class="container-fluid pt-4 container03" id="nextcontainer2">
+            <div class="container">
+                <section data-aos="fade-down" data-aos-duration="2000">
+                    <div class="box01">
+                        <h5>MISSÃO CONCLUÍDA</h5>
+                        <h1>DRAGON RETORNOU PARA A</h1>
+                        <h1 class="mb-5">TERRA</h1>
+                        <button type="button" class="btn btn-outline-light btn01">SAIBA MAIS</button>
+                    </div>
+                    <div class="text-center">
+                        <a href="#nextcontainer3"><img src="./Imagens-projeto-onebitX/home/arrowDown.gif"
+                                alt="arrou-pulse" class="arrow"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Quarta Section da LP, o texto vem de cima para baixo. Foi acrescentado setas para melhor manuseio das páginas -->
+        <div class="container-fluid pt-4 container04" id="nextcontainer3">
+            <div class="container">
+                <section data-aos="fade-down-right" data-aos-duration="2000">
+                    <div class="box01">
+                        <h1>STARSHIP POUSA ASTRONAUTAS</h1>
+                        <h1 class="mb-5">DA NASA NA LUA</h1>
+                        <button type="button" class="btn btn-outline-light btn01">SAIBA MAIS</button>
+                    </div>
+                    <div class="text-center">
+                        <a href="#nextcontainer4"><img src="./Imagens-projeto-onebitX/home/arrowDown.gif"
+                                alt="arrou-pulse" class="arrow2"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p class="me-3">OneBitCode © 2021</p>
+            <a class="me-3" href="#">Instagram</a>
+            <a class="me-3" href="#">YouTube</a>
+            <a class="me-3" href="#">Twitter</a>
+        </div>
+    </footer>
 
 
-    <!-- JavaScript Bundle with Popper -->
+
+    <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
+    <!-- JavaScript AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
