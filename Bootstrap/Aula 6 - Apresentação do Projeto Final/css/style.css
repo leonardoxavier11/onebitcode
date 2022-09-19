@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 
 a {
@@ -12,6 +11,11 @@ a:hover {
   color: #b9b9b9;
 }
 
+.home-img {
+  max-width: 240px;
+  max-height: 39px;
+}
+
 .container01 {
   height: 100vh;
   color: white;
@@ -19,11 +23,6 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.home-img {
-  max-width: 240px;
-  max-height: 39px;
 }
 
 .box01 {
@@ -88,6 +87,14 @@ a:hover {
 }
 .footer p {
   color: white;
+}
+
+.container01-pg3 {
+  height: 100vh;
+  background-image: url(../../Imagens-projeto-onebitX/humanFlight/01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

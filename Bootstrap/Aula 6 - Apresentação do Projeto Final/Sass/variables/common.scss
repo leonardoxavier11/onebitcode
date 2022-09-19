@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 a {
@@ -12,5 +11,10 @@ a {
         color: $secundaycolor-nav;
     }
 
-
 }
+
+.home-img {
+    max-width: 240px;
+    max-height: 39px;
+}
+
