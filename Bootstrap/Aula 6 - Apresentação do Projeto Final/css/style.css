@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 a {
@@ -14,6 +15,25 @@ a:hover {
 .home-img {
   max-width: 240px;
   max-height: 39px;
+}
+
+.btn01 {
+  width: 158px;
+  height: 58px;
+  border: 2px white solid;
+}
+.btn01:hover {
+  font-weight: bold;
+  transition: 0s;
+}
+
+.arrow {
+  width: 95px;
+}
+
+.arrow2 {
+  width: 95px;
+  transform: rotate(180deg);
 }
 
 .container01 {
@@ -30,20 +50,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.btn01 {
-  width: 158px;
-  height: 58px;
-  border: 2px white solid;
-}
-.btn01:hover {
-  font-weight: bold;
-  transition: 0s;
-}
-
-.arrow {
-  width: 95px;
 }
 
 .container02 {
@@ -73,11 +79,6 @@ a:hover {
   background-position: center;
 }
 
-.arrow2 {
-  width: 95px;
-  transform: rotate(180deg);
-}
-
 .footer {
   height: 10vh;
   background-color: black;
@@ -89,12 +90,128 @@ a:hover {
   color: white;
 }
 
-.container01-pg3 {
+.container05 {
   height: 100vh;
+  color: white;
   background-image: url(../Imagens-projeto-onebitX/humanFlight/01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.box02 {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box02 h1 {
+  font-size: 7.5rem;
+}
+.box02 h6 {
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.container06 {
+  background-color: black;
+  color: #b9b9b9;
+  height: 20vh;
+}
+.container06 .box03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  max-width: 800px;
+  text-align: center;
+}
+.container06 .box03 p span {
+  color: white;
+}
+.container06 .box03 p span:hover {
+  cursor: pointer;
+  color: rgb(66, 133, 209);
+}
+
+#container07 {
+  height: 100vh;
+  color: white;
+  background-image: url(../Imagens-projeto-onebitX/humanFlight/02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#container07 .box04 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  float: right;
+}
+#container07 .box04 h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#container08 {
+  height: 100vh;
+  color: white;
+  background-image: url(../Imagens-projeto-onebitX/humanFlight/03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#container08 .box05 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container08 .box05 h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#container09 {
+  height: 100vh;
+  color: white;
+  background-image: url(../Imagens-projeto-onebitX/humanFlight/04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#container09 .box06 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  float: right;
+}
+#container09 .box06 h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#container10 {
+  height: 100vh;
+  color: white;
+  background-image: url(../Imagens-projeto-onebitX/humanFlight/05.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#container10 .box07 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container10 .box07 h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

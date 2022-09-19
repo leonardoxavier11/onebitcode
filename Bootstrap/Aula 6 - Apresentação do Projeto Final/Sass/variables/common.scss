@@ -1,6 +1,7 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 a {
@@ -18,3 +19,22 @@ a {
     max-height: 39px;
 }
 
+.btn01 {
+    width: 158px;
+    height: 58px;
+    border: 2px white solid;
+
+    &:hover {
+        font-weight: bold;
+        transition: 0s;
+    }
+}
+
+.arrow {
+    width: 95px;
+}
+
+.arrow2 {
+    width: 95px;
+    transform: rotate(180deg); //Esse comando faz com que a img da seta vire em 180°
+}

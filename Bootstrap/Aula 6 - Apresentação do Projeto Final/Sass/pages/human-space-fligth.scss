@@ -1,7 +1,142 @@
-.container01-pg3 {
+.container05 {
     height: 100vh;
+    color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.box02 {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 7.5rem;
+    }
+
+    h6 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+}
+
+.container06 {
+    background-color: black;
+    color: $secundaycolor-main;
+    height: 20vh;
+
+    .box03 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        max-width: 800px;
+        text-align: center;
+
+        p {
+            span {
+                color: white;
+
+                &:hover {
+                    cursor: pointer;
+                    color: rgb(66, 133, 209);
+                }
+            }
+        }
+    }
+}
+
+
+
+#container07 {
+    height: 100vh;
+    color: $primarycolor-main;
+    background-image: url(../Imagens-projeto-onebitX/humanFlight/02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .box04 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+        float: right;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+#container08 {
+    height: 100vh;
+    color: $primarycolor-main;
+    background-image: url(../Imagens-projeto-onebitX/humanFlight/03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .box05 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+#container09 {
+    height: 100vh;  
+    color: $primarycolor-main;
+    background-image: url(../Imagens-projeto-onebitX/humanFlight/04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .box06 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+        float: right;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+    }
+
+}
+
+#container10 {
+    height: 100vh;  
+    color: $primarycolor-main;
+    background-image: url(../Imagens-projeto-onebitX/humanFlight/05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .box07 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+    }
+
 }

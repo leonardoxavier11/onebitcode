@@ -14,20 +14,6 @@
     justify-content: center;
 }
 
-.btn01 {
-    width: 158px;
-    height: 58px;
-    border: 2px white solid;
-
-    &:hover {
-        font-weight: bold;
-        transition:0s;
-    }
-}
-
-.arrow {
-    width: 95px;
-}
 .container02 {
     height: 100vh;
     color: $primarycolor-main;
@@ -53,11 +39,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.arrow2 {
-    width: 95px;
-    transform: rotate(180deg); //Esse comando faz com que a img da seta vire em 180°
 }
 
 .footer {
