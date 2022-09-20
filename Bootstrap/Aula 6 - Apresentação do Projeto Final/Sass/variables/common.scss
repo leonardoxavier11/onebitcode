@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+// Foi necessário usar o comando "overflow-x (x = horizontal), devido ao BUG da LIV
+html, body {
+    overflow-x: hidden;
+}
+
 a {
     color: $primarycolor-nav;
     text-decoration: none;
