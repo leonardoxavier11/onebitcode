@@ -10,6 +10,7 @@
 .box02 {
     height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -22,6 +23,8 @@
         text-align: center;
     }
 }
+
+// É necessário ajustar o container06 e container07 para ficarem 100vh
 
 .container06 {
     background-color: black;
@@ -128,7 +131,7 @@
     background-position: center;
 
     .box07 {
-        height: 100vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -137,6 +140,12 @@
             font-size: 3.5rem;
             font-weight: bold;
         }
+    }
+
+    a { // preciso acertar a seta, pq o width de 45% está 
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 
 }
@@ -153,7 +162,7 @@
     .box08 {
         display: flex;
     }
-    
+
     a {
         p { 
             span {

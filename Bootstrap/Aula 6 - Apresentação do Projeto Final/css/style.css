@@ -119,6 +119,7 @@ a:hover {
 .box02 {
   height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -221,7 +222,7 @@ a:hover {
   background-position: center;
 }
 #container10 .box07 {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,6 +230,11 @@ a:hover {
 #container10 .box07 h1 {
   font-size: 3.5rem;
   font-weight: bold;
+}
+#container10 a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 #container11 {
