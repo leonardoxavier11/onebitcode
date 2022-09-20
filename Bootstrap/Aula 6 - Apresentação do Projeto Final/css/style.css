@@ -27,6 +27,15 @@ a:hover {
   transition: 0s;
 }
 
+.btn02 {
+  height: 58px;
+  border: 2px white solid;
+}
+.btn02:hover {
+  font-weight: bold;
+  transition: 0s;
+}
+
 .arrow {
   width: 95px;
 }
@@ -34,6 +43,14 @@ a:hover {
 .arrow2 {
   width: 95px;
   transform: rotate(180deg);
+}
+
+.footer span {
+  color: white;
+}
+
+.footer span a {
+  font-size: 0.5rem;
 }
 
 .container01 {
@@ -212,6 +229,22 @@ a:hover {
 #container10 .box07 h1 {
   font-size: 3.5rem;
   font-weight: bold;
+}
+
+#container11 {
+  height: 85vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container11 .box08 {
+  display: flex;
+}
+#container11 a p span {
+  color: #b9b9b9;
 }
 
 /*# sourceMappingURL=style.css.map */

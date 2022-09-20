@@ -96,7 +96,7 @@
 }
 
 #container09 {
-    height: 100vh;  
+    height: 100vh;
     color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/04.jpg);
     background-size: cover;
@@ -120,7 +120,7 @@
 }
 
 #container10 {
-    height: 100vh;  
+    height: 100vh;
     color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/05.jpg);
     background-size: cover;
@@ -138,5 +138,29 @@
             font-weight: bold;
         }
     }
+
+}
+
+#container11 { 
+    height: 85vh;
+    color: $primarycolor-main;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .box08 {
+        display: flex;
+    }
+    
+    a {
+        p { 
+            span {
+                color: $secundaycolor-main;
+            }
+        }
+    }
+
 
 }

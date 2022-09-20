@@ -30,6 +30,16 @@ a {
     }
 }
 
+.btn02 {
+    height: 58px;
+    border: 2px white solid;
+
+    &:hover {
+        font-weight: bold;
+        transition: 0s;
+    }
+}
+
 .arrow {
     width: 95px;
 }
@@ -37,4 +47,18 @@ a {
 .arrow2 {
     width: 95px;
     transform: rotate(180deg); //Esse comando faz com que a img da seta vire em 180°
+}
+
+.footer {
+    span {
+        color: $primarycolor-main;
+    }
+}
+
+.footer {
+    span {
+        a {
+            font-size: 0.5rem;
+        }
+    }
 }
