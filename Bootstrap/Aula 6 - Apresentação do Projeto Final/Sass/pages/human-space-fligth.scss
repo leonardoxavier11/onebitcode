@@ -1,10 +1,5 @@
 .container05 {
-    height: 100vh;
-    color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/01.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .box02 {
@@ -52,15 +47,8 @@
     }
 }
 
-
-
 #container07 {
-    height: 100vh;
-    color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
     .box04 {
         height: 100vh;
@@ -78,12 +66,7 @@
 }
 
 #container08 {
-    height: 100vh;
-    color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/03.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
     .box05 {
         height: 100vh;
@@ -99,12 +82,7 @@
 }
 
 #container09 {
-    height: 100vh;
-    color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/04.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
     .box06 {
         height: 100vh;
@@ -123,12 +101,7 @@
 }
 
 #container10 {
-    height: 100vh;
-    color: $primarycolor-main;
     background-image: url(../Imagens-projeto-onebitX/humanFlight/05.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
     .box07 {
         height: 80vh;
@@ -142,7 +115,8 @@
         }
     }
 
-    a { // preciso acertar a seta, pq o width de 45% está 
+    a {
+        // preciso acertar a seta, pq o width de 45% está 
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -150,7 +124,7 @@
 
 }
 
-#container11 { 
+#container11 {
     height: 85vh;
     color: $primarycolor-main;
     background-color: black;
@@ -161,12 +135,12 @@
 
     .box08 {
         display: flex;
-    }
 
-    a {
-        p { 
-            span {
-                color: $secundaycolor-main;
+        a {
+            color: $secundaycolor-main;
+
+            &:hover {
+                font-weight: normal;
             }
         }
     }

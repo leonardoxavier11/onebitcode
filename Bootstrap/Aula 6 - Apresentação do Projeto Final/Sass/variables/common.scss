@@ -4,9 +4,21 @@
     box-sizing: border-box;
 }
 
-// Foi necessário usar o comando "overflow-x (x = horizontal), devido ao BUG da LIV
+// Foi necessário usar o comando "overflow-x (x = horizontal), devido ao BUG da LIB
 html, body {
     overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+.container00 {
+    height: 100vh;
+    color: $primarycolor-main;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 a {
@@ -14,7 +26,8 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $secundaycolor-nav;
+        color: $secundaycolor-nav !important;
+        font-weight: bold;
     }
 
 }
@@ -25,7 +38,7 @@ a {
 }
 
 .btn01 {
-    width: 158px;
+    max-width: 158px;
     height: 58px;
     border: 2px white solid;
 

@@ -8,12 +8,25 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  background-color: black;
+}
+
+.container00 {
+  height: 100vh;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 a {
   color: white;
   text-decoration: none;
 }
 a:hover {
-  color: #b9b9b9;
+  color: #b9b9b9 !important;
+  font-weight: bold;
 }
 
 .home-img {
@@ -22,7 +35,7 @@ a:hover {
 }
 
 .btn01 {
-  width: 158px;
+  max-width: 158px;
   height: 58px;
   border: 2px white solid;
 }
@@ -58,12 +71,19 @@ a:hover {
 }
 
 .container01 {
-  height: 100vh;
-  color: white;
   background-image: url(../Imagens-projeto-onebitX/home/01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.container02 {
+  background-image: url(../Imagens-projeto-onebitX/home/03.jpg);
+}
+
+.container03 {
+  background-image: url(../Imagens-projeto-onebitX/home/02.gif);
+}
+
+.container04 {
+  background-image: url(../Imagens-projeto-onebitX/home/04.jpg);
 }
 
 .box01 {
@@ -71,33 +91,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.container02 {
-  height: 100vh;
-  color: white;
-  background-image: url(../Imagens-projeto-onebitX/home/03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.container03 {
-  height: 100vh;
-  color: white;
-  background-image: url(../Imagens-projeto-onebitX/home/02.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.container04 {
-  height: 90vh;
-  color: white;
-  background-image: url("../Imagens-projeto-onebitX/home/04.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .footer {
@@ -112,12 +105,7 @@ a:hover {
 }
 
 .container05 {
-  height: 100vh;
-  color: white;
   background-image: url(../Imagens-projeto-onebitX/humanFlight/01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .box02 {
@@ -157,12 +145,7 @@ a:hover {
 }
 
 #container07 {
-  height: 100vh;
-  color: white;
   background-image: url(../Imagens-projeto-onebitX/humanFlight/02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #container07 .box04 {
   height: 100vh;
@@ -178,12 +161,7 @@ a:hover {
 }
 
 #container08 {
-  height: 100vh;
-  color: white;
   background-image: url(../Imagens-projeto-onebitX/humanFlight/03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #container08 .box05 {
   height: 100vh;
@@ -197,12 +175,7 @@ a:hover {
 }
 
 #container09 {
-  height: 100vh;
-  color: white;
   background-image: url(../Imagens-projeto-onebitX/humanFlight/04.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #container09 .box06 {
   height: 100vh;
@@ -218,12 +191,7 @@ a:hover {
 }
 
 #container10 {
-  height: 100vh;
-  color: white;
   background-image: url(../Imagens-projeto-onebitX/humanFlight/05.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #container10 .box07 {
   height: 80vh;
@@ -253,8 +221,62 @@ a:hover {
 #container11 .box08 {
   display: flex;
 }
-#container11 a p span {
+#container11 .box08 a {
   color: #b9b9b9;
+}
+#container11 .box08 a:hover {
+  font-weight: normal;
+}
+
+.container12 {
+  background-image: url(../../Imagens-projeto-onebitX/falcon9/01.jpg);
+}
+
+.container13 {
+  background-color: black;
+  color: white;
+  height: 15vh;
+}
+.container13 .box09 {
+  display: flex;
+}
+
+#container14 {
+  background-image: url(../../Imagens-projeto-onebitX/falcon9/02.jpg);
+}
+#container14 .box10 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  align-items: center;
+}
+#container14 .box10 p {
+  font-size: 1.3rem;
+  line-height: 2.5;
+  text-align: justify;
+}
+
+#container15 .carousel01 {
+  background-image: url(../../Imagens-projeto-onebitX/falcon9/03.jpg);
+}
+
+#container18 {
+  height: 85vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container18 .box08 {
+  display: flex;
+}
+#container18 .box08 a {
+  color: #b9b9b9;
+}
+#container18 .box08 a:hover {
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

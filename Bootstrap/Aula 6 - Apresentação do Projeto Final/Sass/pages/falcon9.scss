@@ -1,0 +1,63 @@
+.container12 {
+    background-image: url(../../Imagens-projeto-onebitX/falcon9/01.jpg);
+}
+
+.container13 {
+    background-color: black;
+    color: $primarycolor-main;
+    height: 15vh;
+
+    .box09 {
+        display: flex;
+    }
+}
+
+#container14 {
+    background-image: url(../../Imagens-projeto-onebitX/falcon9/02.jpg);
+
+    .box10 {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: .9fr 1fr;
+        align-items: center;
+
+        p {
+            font-size: 1.3rem;
+            line-height: 2.5;
+            text-align: justify;
+        }
+    }
+}
+
+#container15 {
+    .carousel01 {
+        background-image: url(../../Imagens-projeto-onebitX/falcon9/03.jpg);
+
+    }
+}
+
+
+
+#container18 {
+    height: 85vh;
+    color: $primarycolor-main;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .box08 {
+        display: flex;
+
+        a {
+            color: $secundaycolor-main;
+
+            &:hover {
+                font-weight: normal;
+            }
+        }
+    }
+
+
+}
