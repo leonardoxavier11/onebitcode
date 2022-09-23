@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -68,6 +69,10 @@ a:hover {
 
 .footer span a {
   font-size: 0.5rem;
+}
+
+.table {
+  color: white;
 }
 
 .container01 {
@@ -229,7 +234,12 @@ a:hover {
 }
 
 .container12 {
-  background-image: url(../../Imagens-projeto-onebitX/falcon9/01.jpg);
+  background-image: url(../Imagens-projeto-onebitX/falcon9/01.jpg);
+}
+.container12 .title-pg3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
 }
 
 .container13 {
@@ -240,9 +250,12 @@ a:hover {
 .container13 .box09 {
   display: flex;
 }
+.container13 .box09 .number {
+  font-size: 5.5rem;
+}
 
 #container14 {
-  background-image: url(../../Imagens-projeto-onebitX/falcon9/02.jpg);
+  background-image: url(../Imagens-projeto-onebitX/falcon9/02.jpg);
 }
 #container14 .box10 {
   height: 100vh;
@@ -257,7 +270,43 @@ a:hover {
 }
 
 #container15 .carousel01 {
-  background-image: url(../../Imagens-projeto-onebitX/falcon9/03.jpg);
+  background-image: url(../Imagens-projeto-onebitX/falcon9/03.jpg);
+}
+#container15 .carousel02 {
+  background-image: url(../Imagens-projeto-onebitX/falcon9/04.jpg);
+}
+#container15 .carousel03 {
+  background-image: url(../Imagens-projeto-onebitX/falcon9/05.jpg);
+}
+#container15 .carousel04 {
+  background-image: url(../Imagens-projeto-onebitX/falcon9/06.jpg);
+}
+#container15 .carousel05 {
+  background-image: url(../Imagens-projeto-onebitX/falcon9/07.jpg);
+}
+#container15 .box11 {
+  height: 100vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+}
+
+#container16 {
+  background-image: url(../../Imagens-projeto-onebitX/falcon9/08.jpg);
+}
+#container16 .box11 {
+  height: 100vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+}
+
+#container17 .carousel06 {
+  background-image: url(../Imagens-projeto-onebitX/falcon9/09.jpg);
 }
 
 #container18 {

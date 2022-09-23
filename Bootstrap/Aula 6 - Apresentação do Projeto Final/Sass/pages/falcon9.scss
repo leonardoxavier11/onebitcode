@@ -1,5 +1,11 @@
 .container12 {
-    background-image: url(../../Imagens-projeto-onebitX/falcon9/01.jpg);
+    background-image: url(../Imagens-projeto-onebitX/falcon9/01.jpg);
+
+    .title-pg3 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        font-size: 6rem;
+    }
 }
 
 .container13 {
@@ -9,11 +15,15 @@
 
     .box09 {
         display: flex;
+
+        .number {
+            font-size: 5.5rem;
+        }
     }
 }
 
 #container14 {
-    background-image: url(../../Imagens-projeto-onebitX/falcon9/02.jpg);
+    background-image: url(../Imagens-projeto-onebitX/falcon9/02.jpg);
 
     .box10 {
         height: 100vh;
@@ -31,12 +41,53 @@
 
 #container15 {
     .carousel01 {
-        background-image: url(../../Imagens-projeto-onebitX/falcon9/03.jpg);
+        background-image: url(../Imagens-projeto-onebitX/falcon9/03.jpg);
+    }
 
+    .carousel02 {
+        background-image: url(../Imagens-projeto-onebitX/falcon9/04.jpg);
+    }
+
+    .carousel03 {
+        background-image: url(../Imagens-projeto-onebitX/falcon9/05.jpg);
+    }
+
+    .carousel04 {
+        background-image: url(../Imagens-projeto-onebitX/falcon9/06.jpg)
+    }
+
+    .carousel05 {
+        background-image: url(../Imagens-projeto-onebitX/falcon9/07.jpg)
+    }
+
+    .box11 {
+        height: 100vh;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15%;
     }
 }
 
+#container16 {
+    background-image: url(../../Imagens-projeto-onebitX/falcon9/08.jpg);
 
+    .box11 {
+        height: 100vh;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15%;
+    }
+}
+
+#container17 {
+    .carousel06 {
+        background-image: url(../Imagens-projeto-onebitX/falcon9/09.jpg);
+    }
+}
 
 #container18 {
     height: 85vh;
