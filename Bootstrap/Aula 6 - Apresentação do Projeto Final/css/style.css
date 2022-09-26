@@ -247,10 +247,7 @@ a:hover {
   color: white;
   height: 15vh;
 }
-.container13 .box09 {
-  display: flex;
-}
-.container13 .box09 .number {
+.container13 .number {
   font-size: 5.5rem;
 }
 
@@ -294,7 +291,7 @@ a:hover {
 }
 
 #container16 {
-  background-image: url(../../Imagens-projeto-onebitX/falcon9/08.jpg);
+  background-image: url(../Imagens-projeto-onebitX/falcon9/08.jpg);
 }
 #container16 .box11 {
   height: 100vh;
