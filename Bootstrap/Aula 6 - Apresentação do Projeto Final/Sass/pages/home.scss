@@ -1,17 +1,17 @@
     .container00 {
-        .container01 {
+        &.container01 {
             background-image: url(../Imagens-projeto-onebitX/home/01.jpg);
         }
 
-        .container02 {
+        &.container02 {
             background-image: url(../Imagens-projeto-onebitX/home/03.jpg);
         }
 
-        .container03 {
+        &.container03 {
             background-image: url(../Imagens-projeto-onebitX/home/02.gif);
         }
 
-        .container04 {
+        &.container04 {
             background-image: url(../Imagens-projeto-onebitX/home/04.jpg);
         }
     }
