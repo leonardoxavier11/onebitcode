@@ -1,32 +1,24 @@
-    .container01 {
-        background-image: url(../Imagens-projeto-onebitX/home/01.jpg);
-    }
-    .container02 {
-        background-image: url(../Imagens-projeto-onebitX/home/03.jpg);
-    }
-    .container03 {
-        background-image: url(../Imagens-projeto-onebitX/home/02.gif);
-    }
-    .container04 {
-        background-image: url(../Imagens-projeto-onebitX/home/04.jpg);
+    .container00 {
+        .container01 {
+            background-image: url(../Imagens-projeto-onebitX/home/01.jpg);
+        }
+
+        .container02 {
+            background-image: url(../Imagens-projeto-onebitX/home/03.jpg);
+        }
+
+        .container03 {
+            background-image: url(../Imagens-projeto-onebitX/home/02.gif);
+        }
+
+        .container04 {
+            background-image: url(../Imagens-projeto-onebitX/home/04.jpg);
+        }
     }
 
-.box01 {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer {
-    height: 10vh;
-    background-color: black;
-    display: flex; //centralização dos containers filhos
-    justify-content: center;
-    align-items: center;
-
-    p {
-        color: white;
+    .box01 {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-}
-

@@ -23,12 +23,13 @@
     background-image: url(../Imagens-projeto-onebitX/falcon9/02.jpg);
 
     .box10 {
+        display: flex;
         height: 100vh;
-        display: grid;
-        grid-template-columns: .9fr 1fr;
         align-items: center;
+        justify-content: left; //Necessário para alinhar o conteudo a esquerda
 
         p {
+            width: 640px; //Necessário esse width para que o Justify-Content funcione
             font-size: 1.3rem;
             line-height: 2.5;
             text-align: justify;
@@ -78,34 +79,19 @@
         justify-content: center;
         margin-left: 15%;
     }
+
 }
 
 #container17 {
-    .carousel06 {
-        background-image: url(../Imagens-projeto-onebitX/falcon9/09.jpg);
-    }
+    height: 100vh;
 }
 
-#container18 {
-    height: 85vh;
-    color: $primarycolor-main;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    .box08 {
-        display: flex;
+// Media Query
 
-        a {
-            color: $secundaycolor-main;
+/* @media {max-width: 1300px;
 
-            &:hover {
-                font-weight: normal;
-            }
-        }
-    }
+#container17 {
 
-
-}
+} 
+} */

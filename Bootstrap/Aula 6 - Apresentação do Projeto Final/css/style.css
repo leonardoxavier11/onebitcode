@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -63,10 +64,39 @@ a:hover {
   transform: rotate(180deg);
 }
 
+#container11,
+#container18 {
+  height: 85vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container11 .box08,
+#container18 .box08 {
+  display: flex;
+}
+#container11 .box08 a,
+#container18 .box08 a {
+  color: #b9b9b9;
+}
+#container11 .box08 a:hover,
+#container18 .box08 a:hover {
+  font-weight: normal;
+}
+
+.footer {
+  height: 15vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer span {
   color: white;
 }
-
 .footer span a {
   font-size: 0.5rem;
 }
@@ -75,19 +105,16 @@ a:hover {
   color: white;
 }
 
-.container01 {
+.container00 .container01 {
   background-image: url(../Imagens-projeto-onebitX/home/01.jpg);
 }
-
-.container02 {
+.container00 .container02 {
   background-image: url(../Imagens-projeto-onebitX/home/03.jpg);
 }
-
-.container03 {
+.container00 .container03 {
   background-image: url(../Imagens-projeto-onebitX/home/02.gif);
 }
-
-.container04 {
+.container00 .container04 {
   background-image: url(../Imagens-projeto-onebitX/home/04.jpg);
 }
 
@@ -96,17 +123,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.footer {
-  height: 10vh;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer p {
-  color: white;
 }
 
 .container05 {
@@ -214,25 +230,6 @@ a:hover {
   align-items: flex-end;
 }
 
-#container11 {
-  height: 85vh;
-  color: white;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#container11 .box08 {
-  display: flex;
-}
-#container11 .box08 a {
-  color: #b9b9b9;
-}
-#container11 .box08 a:hover {
-  font-weight: normal;
-}
-
 .container12 {
   background-image: url(../Imagens-projeto-onebitX/falcon9/01.jpg);
 }
@@ -255,12 +252,13 @@ a:hover {
   background-image: url(../Imagens-projeto-onebitX/falcon9/02.jpg);
 }
 #container14 .box10 {
+  display: flex;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 0.9fr 1fr;
   align-items: center;
+  justify-content: left;
 }
 #container14 .box10 p {
+  width: 640px;
   font-size: 1.3rem;
   line-height: 2.5;
   text-align: justify;
@@ -302,27 +300,15 @@ a:hover {
   margin-left: 15%;
 }
 
-#container17 .carousel06 {
-  background-image: url(../Imagens-projeto-onebitX/falcon9/09.jpg);
+#container17 {
+  height: 100vh;
 }
 
-#container18 {
-  height: 85vh;
-  color: white;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#container18 .box08 {
-  display: flex;
-}
-#container18 .box08 a {
-  color: #b9b9b9;
-}
-#container18 .box08 a:hover {
-  font-weight: normal;
-}
+/* @media {max-width: 1300px;
+
+#container17 {
+
+} 
+} */
 
 /*# sourceMappingURL=style.css.map */

@@ -124,26 +124,3 @@
 
 }
 
-#container11 {
-    height: 85vh;
-    color: $primarycolor-main;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .box08 {
-        display: flex;
-
-        a {
-            color: $secundaycolor-main;
-
-            &:hover {
-                font-weight: normal;
-            }
-        }
-    }
-
-
-}

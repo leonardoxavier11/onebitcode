@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-// Foi necessário usar o comando "overflow-x (x = horizontal), devido ao BUG da LIB
-html, body {
+html,
+body {
+    // Foi necessário usar o comando "overflow-x (x = horizontal), devido ao BUG da LIB
     overflow-x: hidden;
 }
 
@@ -26,7 +27,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $secundaycolor-nav !important;
+        color: $secundaycolor-nav  !important;
         font-weight: bold;
     }
 
@@ -67,14 +68,41 @@ a {
     transform: rotate(180deg); //Esse comando faz com que a img da seta vire em 180°
 }
 
-.footer {
-    span {
-        color: $primarycolor-main;
+#container11,
+#container18 {
+    height: 85vh;
+    color: $primarycolor-main;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .box08 {
+        display: flex;
+
+        a {
+            color: $secundaycolor-main;
+
+            &:hover {
+                font-weight: normal;
+            }
+        }
     }
+
+
 }
 
 .footer {
+    height: 15vh;
+    background-color: black;
+    display: flex; //centralização dos containers filhos
+    justify-content: center;
+    align-items: center;
+
     span {
+        color: $primarycolor-main;
+
         a {
             font-size: 0.5rem;
         }
@@ -82,5 +110,7 @@ a {
 }
 
 .table {
-    color:white;
+    color: white;
 }
+
+// Media Query
