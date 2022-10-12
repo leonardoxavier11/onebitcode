@@ -33,7 +33,7 @@ if (atk > def) {
     }
 }
 else {
-    alert("O " + name2 + " não sofreu danos e seus pontos de vidas continuam em " + resultado)
+    alert("O " + name2 + " não sofreu danos e seus pontos de vidas continuam em " + life)
 }
 
 
