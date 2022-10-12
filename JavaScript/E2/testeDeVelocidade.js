@@ -8,7 +8,7 @@ let car2 = prompt("Escreva o nome do segundo veículo")
 let vel1 = prompt("Agora, escreve a velocidade do " + car1 + ". Utilize apenas números")
 let vel2 = prompt("Agora, escreve a velocidade do " + car2 + ". Utilize apenas números")
 
-// Como temos 3 posibilidades de retornos (>, < ou =), não é possível utilizar o operador ternário
+// Como temos 3 posibilidades de retornos (>, < ou =), não é possível utilizar o Operador Ternário
 
 if (vel1 > vel2) {
     alert("O " + car1 + " é mais rápido.")
