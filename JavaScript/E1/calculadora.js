@@ -19,7 +19,7 @@ let multiplicacao = a * b
 alert(
     "Resultados: \n" +
     "\nsoma: " + soma +
-    "\nsubtralção: " + subtracao +
+    "\nsubtração: " + subtracao +
     "\ndivisão: " + divisao +
     "\nmultiplicação: " + multiplicacao
 )
