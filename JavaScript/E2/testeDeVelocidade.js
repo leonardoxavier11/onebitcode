@@ -2,11 +2,11 @@
 
 alert("Olá, começamos agora o exercício 2 do módulo JavaScript - Básico")
 
-let car1 = prompt("Escreva o nome do primiero veículo")
-let car2 = prompt("Escreva o nome do segundo veículo")
+const car1 = prompt("Escreva o nome do primiero veículo")
+const car2 = prompt("Escreva o nome do segundo veículo")
 
-let vel1 = prompt("Agora, escreve a velocidade do " + car1 + ". Utilize apenas números")
-let vel2 = prompt("Agora, escreve a velocidade do " + car2 + ". Utilize apenas números")
+const vel1 = prompt("Agora, escreve a velocidade do " + car1 + ". Utilize apenas números")
+const vel2 = prompt("Agora, escreve a velocidade do " + car2 + ". Utilize apenas números")
 
 // Como temos 3 posibilidades de retornos (>, < ou =), não é possível utilizar o Operador Ternário
 

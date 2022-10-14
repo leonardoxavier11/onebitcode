@@ -18,24 +18,9 @@ let life = prompt("Qual a quantidade de pontos de vida?")
 const def = prompt("Qual o poder o seu poder de defesa?")
 const shield = prompt("Ele possui escudo? [Sim] ou [Não]")
 
+//Essas VAR devem ser refeitas
 let dano = atk - def
 let resultado = life - dano
 
 
-// Algoritmo -> Este foi meu algoritmo inicial, funcionou mas não está bom.
-if (atk > def) {
-    if (shield == "Sim") {
-        dano = dano / 2
-        resultado = life - dano //Necessário para atualizar a variável "resultado" com o novo valor do dano, que foi dividido por 2
-        alert("O " + name2 + " sofreu " + dano + " e agora seus pontos de vida são " + resultado)
-    }
-    else if (shield == "Não") {
-        alert("O " + name2 + " sofreu " + dano + " e agora seus pontos de vida são " + resultado)
-    }
-    else {
-        alert("Você digitou um valor inválido quando perguntado sobre o escudo")
-    }
-}
-else {
-    alert("O " + name2 + " não sofreu danos e seus pontos de vidas continuam em " + life)
-}
+// Algoritmo
