@@ -18,10 +18,12 @@ let shield = prompt("Ele possui escudo? [Sim] ou [Não]")
 let dano = atk - def
 let resultado = life - dano
 
+
 // Algoritmo
 if (atk > def) {
     if (shield == "Sim") {
-        console.log(dano / 2)
+        dano = dano / 2
+        resultado = life - dano //Necessário para atualizar a variável "resultado" com o novo valor do dano, que foi dividido por 2
         alert("O " + name2 + " sofreu " + dano + " e agora seus pontos de vida são " + resultado)
     }
     else if (shield == "Não") {
@@ -29,11 +31,10 @@ if (atk > def) {
         alert("O " + name2 + " sofreu " + dano + " e agora seus pontos de vida são " + resultado)
     }
     else {
-        alert("Você digitou um valor inválido quando pergutado sobre o escudo")
+        alert("Você digitou um valor inválido quando perguntado sobre o escudo")
     }
 }
 else {
     alert("O " + name2 + " não sofreu danos e seus pontos de vidas continuam em " + life)
 }
-
 
