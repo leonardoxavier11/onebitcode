@@ -14,31 +14,32 @@ const name1 = prompt("Escreva o nome do primeiro personagem")
 const atk = prompt("Agora escreva seu poder de ataque")
 
 const name2 = prompt("Escreva o nome do segundo personagem")
-let life = prompt("Qual a quantidade de pontos de vida?")
+let life = prompt("Qual a quantidade de pontos de vida?") // Essa vaiável fica como "let", pois a mesma terá um novo valor após o calculo do "dano"
 const def = prompt("Qual o poder o seu poder de defesa?")
-const shield = prompt("Ele possui escudo? [Sim] ou [Não]")
+let shield = prompt("Ele possui escudo? [Sim] ou [Não]") // Essa variável fica como "let", pois precisamos validar e aceitar um novo valor quando a mesma for diferente de "Sim" ou "Não"
+
+while(shield !== "Sim" && shield !== "Não") {
+    alert("Você digitou um valor inválido quando perguntado sobre o escudo")
+    shield = prompt("Ele possui escudo? [Sim] ou [Não]")
+}
 
 let dano = atk - def
 
 
 // Algoritmo
 if (atk > def && shield === "Sim") {
-    dano = dano / 2
-    life = life - dano //Necessário para atualizar a variável "resultado" com o novo valor do dano, que foi dividido por 2
+    dano /= 2
+    life -= dano //Necessário para atualizar a variável "resultado" com o novo valor do dano, que foi dividido por 2
     alert("O " + name2 + " sofreu " + dano + " e agora seus pontos de vida são " + life)
 }
 else if (atk > def && shield === "Não") {
-    life = life - dano
+    life -= dano
     alert("O " + name2 + " sofreu " + dano + " e agora seus pontos de vida são " + life)
-}
-else if (shield !== "Sim" && shield !== "Não") {
-    alert("Você digitou um valor inválido quando perguntado sobre o escudo")
 }
 else {
     alert("O " + name2 + " não sofreu danos e seus pontos de vidas continuam em " + life)
 }
 
-// Como posso desabilitar esse alert se cair no else if de "Shield !== Não && Sim"
 alert(
     name1 +
     "\nPoder de ataque: " + atk + "\n\n" +
