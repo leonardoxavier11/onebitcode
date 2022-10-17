@@ -25,7 +25,6 @@ while(shield !== "Sim" && shield !== "Não") {
 
 let dano = atk - def
 
-
 // Algoritmo
 if (atk > def && shield === "Sim") {
     dano /= 2
