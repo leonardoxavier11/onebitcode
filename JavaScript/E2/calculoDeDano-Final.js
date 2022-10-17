@@ -38,6 +38,7 @@ else {
     alert("O " + name2 + " não sofreu danos e seus pontos de vidas continuam em " + life)
 }
 
+// Como posso desabilitar esse alert se cair no else if de "Shield !== Não && Sim"
 alert(
     name1 +
     "\nPoder de ataque: " + atk + "\n\n" +
