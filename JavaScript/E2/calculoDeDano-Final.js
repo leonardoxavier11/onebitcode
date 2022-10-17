@@ -18,7 +18,6 @@ let life = prompt("Qual a quantidade de pontos de vida?")
 const def = prompt("Qual o poder o seu poder de defesa?")
 const shield = prompt("Ele possui escudo? [Sim] ou [Não]")
 
-//Essas VAR devem ser refeitas
 let dano = atk - def
 
 
