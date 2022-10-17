@@ -28,27 +28,27 @@ let resultado
 switch (unidade) {
     case "mm":
         resultado = medida_Number * 10 ** 3
-        alert(resultado)
+        alert(medida +" M é igual a: " + resultado + " MM")
         break
     case "cm":
         resultado = medida_Number * 10 ** 2
-        alert(resultado)
+        alert(medida +" M é igual a: " + resultado + " CM")
         break
     case "dm":
         resultado = medida_Number * 10 ** 1
-        alert(resultado)
+        alert(medida +" M é igual a: " + resultado + " DM")
         break
     case "dam":
         resultado = medida_Number * 10 ** -1
-        alert(resultado)
+        alert(medida +" M é igual a: " + resultado + " DAM")
         break
     case "hm":
         resultado = medida_Number * 10 ** -2
-        alert(resultado)
+        alert(medida +" M é igual a: " + resultado + " HM")
         break
     case "km":
         resultado = medida_Number * 10 ** -3
-        alert(resultado)
+        alert(medida +" M é igual a: " + resultado + " KM")
         break
     default:
         alert("Opção inválida")
