@@ -2,10 +2,14 @@
 
 //VAR
 let n = 0;
+let resultados = "";
 
 n = prompt("Insira um numero:");
 n = parseFloat(n);
 
 for (let i = 1; i <=20; i++) {
     console.log(n + " X " + i + " = " + n * i);
+    resultados += " -> " + n + " X " + i + " = " + n * i + "\n";
 }
+
+alert(resultados);
