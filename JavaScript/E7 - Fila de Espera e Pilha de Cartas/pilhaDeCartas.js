@@ -2,14 +2,14 @@
 
 let filaDeCartas = ["Às", "Rei", "Rainha"];
 
-
 do {
-    let cartas = "Essas são as cartas atualmente no baralho:\n\n";
+    let cartas = "";
     for (i = 0; i < filaDeCartas.length; i++) {
         cartas += filaDeCartas[i] + "\n"
     }
 
-    opcao = prompt(cartas + "\nEscolha uma opção: " +
+    opcao = prompt("Atualmente há " + filaDeCartas.length + " cartas no baralho. E elas são\n\n" + //No lugar o filaDeCartas.length, poderia ter utilizado o i
+        cartas + "\nEscolha uma opção: " +
         "\n\n 1 - Adicionar nova carta" +
         "\n 2 -Puxar uma carta do baralho" +
         "\n 3 - Sair")
@@ -23,10 +23,14 @@ do {
                 alert("Carta inválida")
             }
             break
-        case "2": let cartaRemovida = filaDeCartas.pop()
+        case "2": if (filaDeCartas.length > 0) {
+            let cartaRemovida = filaDeCartas.pop()
             alert(cartaRemovida + " foi removida")
+        } else {
+            alert("Não há cartas no baralho")
+        }
             break
-        case "3": alert("Ecerrando programa")
+        case "3": alert("Encerrando programa")
             break
         default: alert("Opção inválida")
     }
