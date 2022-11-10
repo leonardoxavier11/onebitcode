@@ -33,3 +33,13 @@ for (let i = 0; i < matriz.length; i++) {
         console.log("Posição: (" + i + ", " + j + ") Valor: " + elemento)
     }
 }
+
+//Exercicio Quiz 3 - Arrays e Objetos 
+let matriz2 = [
+    [0, 1, 2, 3, 4],
+    [5, 6, 7, 8, 9],
+    [10, 11, 12, 13, 14],
+    [15, 16, 17, 18, 19],
+    20
+]
+console.log(matriz2)
