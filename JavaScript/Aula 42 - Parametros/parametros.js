@@ -30,6 +30,7 @@ function soma2(a, b, c, d, e) {
 soma2(7, 6, 1, 10, 15)
 
 //E também é possível criar funções com objetos, por exemplo.
+//A ordem que a gente define os parametros na declaração da função, precisa ser a mesma que a gente chama eles. Como o "tipo" tem um valor padrão, é opcional. LEMBRANDO: o valor/valores padrão sempre precisa ser o último na função.
 function criarUsuario(nome, email, senha = "1234", tipo = "admin") {
     const usuario = {
         nome, //Mesmo que -> nome: nome,
@@ -40,7 +41,6 @@ function criarUsuario(nome, email, senha = "1234", tipo = "admin") {
     console.log(usuario)
 }
 
-//A ordem que a gente define os parametros na declaração da função, precisa ser a mesma que a gente chama eles. Como o "tipo" tem um valor padrão, é opcional. LEMBRANDO: o valor/valores padrão sempre precisa ser o último na função.
 criarUsuario("Leonardo", "leonardo@email.com")
 
 
@@ -48,18 +48,13 @@ criarUsuario("Leonardo", "leonardo@email.com")
 //Nas funções, quando há muitos parâmetros, o ideal é transforma-lo em 1 parâmetro só e ele sendo um objeto.
 
 //Ao invés de fazer isso:
-function muitosParametros(nome, telefone, endereco, aniversario, email, senha) {
-    console.log(nome, telefone, endereco, aniversario, email, senha)
+function muitosParametros(nome1, telefone1, endereco1, aniversario1, email1, senha1) {
+    console.log(nome1, telefone1, endereco1, aniversario1, email1, senha1)
 }
 muitosParametros("Leonardo", "telefone", "logo ali", "31/12/1901", "leo@email.com", "123456")
 
 
-//Faça isso:
-function objetoComoParametro(usuario) {
-    usuario.nome
-    usuario.email
-    //...
-}
+//Faça isso: 
 
 const dadosDoUsuario = {
     nome: "Leonardo",
@@ -67,6 +62,16 @@ const dadosDoUsuario = {
     senha: "123456",
     endereco: "logo ali",
     aniversario: "31/12/1901"
+}
+
+function objetoComoParametro(usuario2) {
+    console.log(
+    usuario2.nome,
+    usuario2.email,
+    usuario2.senha,
+    usuario2.endereco,
+    usuario2.aniversario
+    )
 }
 
 objetoComoParametro(dadosDoUsuario)
