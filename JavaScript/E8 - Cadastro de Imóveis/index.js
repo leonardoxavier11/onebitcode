@@ -3,15 +3,17 @@ I) Deve ter um menu interativo que sempre é exibido até que o usuário escolha
 II) O menu interativo deve mostrar no topo a quantidade de imóveis cadastrados.
 III) O menu deve ter a opção de salvar um imóvel.
 IV) Para salvar um novo imóvel o programa deve pedir as seguintes informações:
-    - Nome do proprietário.
-    - Quantidade de quartos.
-    - Quantidade de banheiros.
-    - Se possui garagem.
+- Nome do proprietário.
+- Quantidade de quartos.
+- Quantidade de banheiros.
+- Se possui garagem.
 V) O menu também deve ter a opção de mostrar todos os imóveis salvos. */
 
+//Cadastro o Array vazio
+const imoveisCadastrados = [];
 
-const imoveisCadastrados = [] //Cadastro o Array vazio
-let opcao = ""; //Opcao do "switch"
+//Opcao do "switch"
+let opcao = "";
 
 do {
     //Menu interativo
@@ -20,10 +22,12 @@ do {
         "1 - Cadastrar novo imóvel\n" +
         "2 - Mostrar todos os imóveis cadastrados\n" +
         "3 - Sair"
-    ); 
+    );
 
     switch (opcao) {
-        case "1": const novoImovel = {}; //Cadastro variável "novoImovel" como um objeto
+        case "1":
+            //Cadastro variável "novoImovel" como um objeto
+            const novoImovel = {};
 
             //Propriedades do objeto
             novoImovel.identificacao = prompt("Qual a identificação do imóvel?");
@@ -32,21 +36,31 @@ do {
             novoImovel.qntBanheiros = prompt("Quantos banheiros há no imóvel??");
             novoImovel.garagem = prompt("Possui garagem? (Sim/Não)");
 
-            imoveisCadastrados.push(novoImovel); //Adicionar o objeto ao final do Array
-            alert(novoImovel.identificacao + " cadastrado com sucesso"); //Msg de variável cadastrada
+            //Adicionar o objeto ao final do Array com a função "push"
+            imoveisCadastrados.push(novoImovel);
+
+            //Msg de variável cadastrada
+            alert(novoImovel.identificacao + " cadastrado com sucesso");
             break
 
         case "2":
-            let imoveis = ""; //Variável tipo "string" que irá consilidar cada indice do Array para exibição
-            //Aqui usamos for apenas na propriedade de "identificação" do objeto
+            //Variável tipo "string" que irá consolidar cada indice do Array para exibição e também responsável por "zerar" a cada vez que passar pelo "case: 2"
+            let imoveis = "";
+
+            //Aqui usamos for para pecorrer pelos indices do array e retornar apenas a propriedade de "identificação" do objeto que está naquele indice (i)
             for (i = 0; i < imoveisCadastrados.length; i++) {
                 imoveis += "- " + imoveisCadastrados[i].identificacao + "\n";
-            } 
-            alert("Aqui estão os imóveis cadastrados atualmente: \n\n" + imoveis); //Exibição em tela
+            }
+
+            //Exibição em tela
+            alert("Aqui estão os imóveis cadastrados atualmente: \n\n" + imoveis);
+
+            //Variável "detalhes" para usar no próximo "pompt"
             let detalhes = "";
             detalhes = prompt("Gostaria de ver os detalhes dos imóveis? (Sim/Não)");
             if (detalhes = "Sim") {
-                //Aqui usamos for para pecorrer todas as propriedades dos objetos que estão no array. Cada objeto está em um indice (i)
+
+                //Aqui usamos for para pecorrer pelos indices do array e retornar todas as propriedades de cada objeto que está naquele indice (i)
                 for (i = 0; i < imoveisCadastrados.length; i++) {
                     alert("Identificação: " + imoveisCadastrados[i].identificacao + "\n\n" +
                         "Proprietário: " + imoveisCadastrados[i].proprietario + "\n" +
@@ -54,16 +68,17 @@ do {
                         "Quantidade de Banheiros: " + imoveisCadastrados[i].qntBanheiros + "\n" +
                         "Possui Garagem?: " + imoveisCadastrados[i].garagem + "\n")
                 }
-    } else {
-        alert("Ok, retornando ao menu inicial")
-    }
-    break
+            } else {
+                alert("Ok, retornando ao menu inicial")
+            }
+            break
         case "3": alert("Programa encerrado")
-    break
+            break
         default: alert("Opção inválida");
-}
+    }
 
 } while (opcao !== "3");
 
-console.log(imoveisCadastrados); //Exibir o Array atualizado no console apenas para verificação.
+//Exibir o Array atualizado no console apenas para verificação.
+console.log(imoveisCadastrados);
 
