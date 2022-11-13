@@ -16,20 +16,40 @@ let lado = 0;
 let baseMaior = 0;
 let baseMenor = 0;
 let raio = 0;
+const pi = 3.14;
 
+//Função de escolha (if-else), deve ser aplicada a todos os "cases" do "switch"
 function informarMedidas() {
-    if (opcao === 1 || 2) {
-        base = prompt("Agora informe as medidas para a base:");
-        altura = prompt("E também para a altura:");
+    if (opcao === 1 || opcao === 2) {
+        base = parseFloat(prompt("Agora informe as medidas para a base:"));
+        altura = parseFloat(prompt("E também para a altura:"));
     } else if (opcao === 3) {
-        lado = prompt("Agora informe a medida para o lado:");
+        lado = parseFloat(prompt("Agora informe a medida para o lado:"));
     } else if (opcao === 4) {
-        baseMaior = prompt("Agora informe a medida da base maior:");
-        baseMenor = prompt("E também para a base menor:");
+        baseMaior = parseFloat(prompt("Agora informe a medida da base maior:"));
+        baseMenor = parseFloat(prompt("E também para a base menor:"));
+        altura = parseFloat(prompt("E por último, também informe a altura"));
     } else {
-        raio = prompt("Informe a medida do raio da circunferência:");
+        raio = parseFloat(prompt("Informe a medida do raio da circunferência:"));
     }
-}
+};
+
+//Funções de cáluclo dos cases
+function areaTriangulo() {
+    return base * altura / 2
+};
+function areaRetangular() {
+    return base * altura
+};
+function areaQuadrada() {
+    return lado ** 2
+};
+function areaTrapezio() {
+    return (baseMaior + baseMenor) * altura / 2
+};
+function areaCiruculo() {
+    return pi * raio ** 2
+};
 
 do {
     opcao = parseFloat(prompt("Escolha uma opcão" +
@@ -42,24 +62,28 @@ do {
     ))
     switch (opcao) {
         case 1:
-            informarMedidas()
+            informarMedidas();
+            alert(areaTriangulo(base, altura));
             break
         case 2:
-            informarMedidas()
+            informarMedidas();
+            alert(areaRetangular(base, altura));
             break
         case 3:
-            informarMedidas()
+            informarMedidas();
+            alert(areaQuadrada(lado));
             break
         case 4:
-            informarMedidas()
+            informarMedidas();
+            alert(areaTrapezio(baseMaior, baseMenor, altura));
             break
         case 5:
-            informarMedidas()
+            informarMedidas();
+            alert(areaCiruculo(raio));
             break
         case 6: alert("Programa encerrado");
             break
         default: alert("Opção inválida");
-    }
-    console.log(opcao)
+    };
 } while (opcao !== 6);
 
