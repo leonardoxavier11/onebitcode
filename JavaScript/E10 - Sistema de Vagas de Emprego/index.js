@@ -1,10 +1,4 @@
-
-// - A opção de visualizar uma vaga deve pedir o índice da vaga e mostrar todas as informações dela: índice, nome, descrição, data limite, quantidade de candidatos e o nome dos candidatos.
-
 // - A opção de excluir uma vaga deve pedir o índice da vaga, mostrar suas informações e pedir que o usuário confirme a exclusão da vaga antes de realmente exclui-la.
-
-// Este é o exercício de revisão do módulo, então aproveite para utilizar todos os recursos vistos até agora sempre que possível, como os objetos, arrays e funções.
-// ------------------------------//-----------------------------
 
 //Funções
 
@@ -14,6 +8,9 @@ const nomeDosCandidatos = [];
 
 //Opcao do "switch"
 let opcao = "";
+
+//VAR Global
+let indiceVaga;
 
 do {
     //Menu interativo
@@ -36,20 +33,18 @@ do {
 
             //"For" responspavel por armazenar as informações citadas abaixo, de todas as vagas, na variável criada acima
             if (vagas.length > 0) {
-                if (nomeDosCandidatos.length > 0) {
-                    for (let i = 0; i < vagas.length; i++) {
-                        vagasCadastradas += "\nIndice: " + i +
-                            "\nNome da Vaga: " + vagas[i].nome +
-                            "\nQuantidade de Candidatos: " + vagas[i].nomeDosCandidatos.length + "\n\n"
+                for (let i = 0; i < vagas.length; i++) {
+                    vagasCadastradas += "\nIndice: " + i +
+                        "\nNome da Vaga: " + vagas[i].nome
+
+                    //"For" responsável por verificar se a propriedade "nomeDosCandidatos" existe ou não naquele indice, dentro do Array "vagas"
+                    if (vagas[i].nomeDosCandidatos) {
+                        vagasCadastradas += "\nQuantidade de Candidatos: " + vagas[i].nomeDosCandidatos.length + "\n\n"
+                    } else {
+                        vagasCadastradas += "\nQuantidade de Candidatos: 0" + "\n\n"
                     }
-                } else {
-                    for (let i = 0; i < vagas.length; i++) {
-                        vagasCadastradas += "\nIndice: " + i +
-                            "\nNome da Vaga: " + vagas[i].nome +
-                            "\nQuantidade de Candidatos: 0"
-                    }
-                    alert(vagasCadastradas);
                 }
+                alert(vagasCadastradas);
             }
 
             break
@@ -81,11 +76,35 @@ do {
 
             break
         case "3":
+            indiceVaga = parseInt(prompt("Qual o indice da vaga que você quer visualizar com mais detalhes?"));
+            if (indiceVaga <= vagas.length) {
+
+                let qntoCandidatos
+                let nomeCandidatos
+                if (vagas[indiceVaga].nomeDosCandidatos) {
+                    qntoCandidatos = "Quantidade de Candidatos: " + vagas[indiceVaga].nomeDosCandidatos.length
+                    nomeCandidatos = "Nome dos Candidatos: " + vagas[indiceVaga].nomeDosCandidatos
+                } else {
+                    qntoCandidatos = "Quantidade de Candidatos: 0"
+                    nomeCandidatos = "Sem Candidatos"
+                }
+
+                alert(
+                    "Indice da vaga: " + indiceVaga +
+                    "\nNome da Vaga: " + vagas[indiceVaga].nome +
+                    "\nDescrição da Vaga: " + vagas[indiceVaga].descricao +
+                    "\nData Limite: " + vagas[indiceVaga].dataLimite +
+                    "\n" + qntoCandidatos +
+                    "\n" + nomeCandidatos
+                )
+            } else {
+                alert("Não há nenhuma vaga cadastrada para o indice digitado");
+            }
 
             break
         case "4":
             let nomeCandidato = prompt("Qual o nome do candidato?");
-            let indiceVaga = parseInt(prompt("Qual o indice da vaga que você quer atrelar esse condidato?"));
+            indiceVaga = parseInt(prompt("Qual o indice da vaga que você quer atrelar esse candidato?"));
 
             //O indice digitado existe? Ou seja, o numero do indice é menor ou igual ao tamanho do array "vagas" ?
             if (indiceVaga <= vagas.length) {
