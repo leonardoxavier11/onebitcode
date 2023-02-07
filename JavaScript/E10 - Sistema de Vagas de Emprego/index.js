@@ -30,7 +30,8 @@ do {
 
         case "1":
             alert("Atualmente há " + vagas.length + " disponíveis");
-            //Variável responsável por armazenar as informações contidas no "for" abaixo. Será zerada toda vez que a opeção "1" for acionada
+
+            //Variável responsável por armazenar as informações contidas no "for" abaixo. Será zerada toda vez que a opção "1" for acionada
             let vagasCadastradas = "";
 
             //"For" responspavel por armazenar as informações citadas abaixo, de todas as vagas, na variável criada acima
@@ -89,7 +90,7 @@ do {
             //O indice digitado existe? Ou seja, o numero do indice é menor ou igual ao tamanho do array "vagas" ?
             if (indiceVaga <= vagas.length) {
 
-                //Se sim, existe o array "NomedosCandidato" dentro do objeto que está no indice digitado ?
+                //Se sim, existe o array "NomedosCandidato" dentro do objeto que está no indice digitado ? (Se existe for "true", então faça)
                 if (vagas[indiceVaga].nomeDosCandidatos) {
 
                     //Se sim, então adiciona ao array um novo nome do candidato, após confirmação
@@ -110,11 +111,8 @@ do {
                         alert("Candidato não foi atrelado")
                     }
 
-                    //Se não, cria o array dentro do objeto e adiciona o nome do candidato
+                    //Se não, irá criar o array dentro do objeto e adiciona o nome do candidato, após confirmação
                 } else {
-                    vagas[indiceVaga].nomeDosCandidatos = [];
-                    vagas[indiceVaga].nomeDosCandidatos.push(nomeCandidato);
-
                     const confirmacao = confirm(
                         "Por favor, confirme as informações para atrelar o candidato à vaga" +
                         "\n\nCandidato: " + nomeCandidato +
