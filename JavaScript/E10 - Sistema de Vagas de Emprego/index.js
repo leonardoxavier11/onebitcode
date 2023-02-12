@@ -29,7 +29,7 @@ do {
             //Variável responsável por armazenar as informações contidas no "for" abaixo. Será zerada toda vez que a opção "1" for acionada
             let vagasCadastradas = "";
 
-            //"For" responspavel por armazenar as informações citadas abaixo, de todas as vagas, na variável criada acima
+            //"For" responsável por armazenar as informações citadas abaixo, de todas as vagas, na variável criada acima
             if (vagas.length > 0) {
                 for (let i = 0; i < vagas.length; i++) {
                     vagasCadastradas += "\nIndice: " + i +
@@ -91,7 +91,7 @@ do {
                 //Resposta: No JavaScript, undefined é considerado um valor false. Portanto, se a condição de um if for undefined, a condição será avaliada como falsa e o bloco de código dentro do else será executado.
                 else {
                     qntoCandidatos = "Quantidade de Candidatos: 0"
-                    // nomeCandidatos = "-"
+                    nomeCandidatos = "Nome dos Candidatos: -"
                 }
 
                 alert(
