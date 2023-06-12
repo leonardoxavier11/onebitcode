@@ -54,3 +54,16 @@ function addContact() {
     fildset.appendChild(legend);
     contactsList.appendChild(fildset); // Todos ficam dentro do elemento contacts-list pego lá em cima
 }
+
+function removeContact() {
+    const contactsList = document.getElementById('contacts-list');
+    const fieldsets = document.getElementsByTagName('fieldset');
+
+    // Obtém o último elemento fieldset
+    const lastFieldset = fieldsets[fieldsets.length - 1];
+
+    // Remove o último contato adicionado
+    if (lastFieldset) {
+        contactsList.removeChild(lastFieldset);
+    }
+}
