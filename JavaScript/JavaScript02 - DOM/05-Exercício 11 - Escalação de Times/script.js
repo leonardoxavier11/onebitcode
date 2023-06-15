@@ -61,7 +61,7 @@ function escalarJogador() {
         // Função de confirmação
         function confirmarEnvio(event) {
             event.preventDefault();
-            const resposta = confirm("Confirme para enviar as informações:");
+            const resposta = confirm("Confirmar " + nameInput.value + " como " + posicaoInput.value + " ?");
             if (resposta) {
                 timeEscalado(posicaoInput.value, nameInput.value, nCamisaInput.value);
 
@@ -101,14 +101,9 @@ function timeEscalado(posicao, name, nCamisa) {
 }
 
 function removerJogador() {
-    const timeEscalado = document.getElementById('timeEscalado');
+    const timeEscalado = document.getElementById('timeEscalado'); //get -> HTMLCollection
 
-    const p = document.getElementsByTagName('p');
-
-    // const array = [...p];
-    // array.map((j) => {
-    //     alert(j.innerText);
-    // });
+    const p = document.querySelectorAll('p'); //query -> Node List
 
     // Obtém o último elemento fieldset
     const lastP = p[p.length - 1];

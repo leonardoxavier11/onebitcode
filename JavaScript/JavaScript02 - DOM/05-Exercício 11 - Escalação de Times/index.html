@@ -14,12 +14,14 @@
     <div class="container">
         <div class="content">
             <header>
-                <div class="buttons">
-                    <button onclick="escalarJogador()">Escalar Jogador</button>
-                    <button onclick="removerJogador()">Remover Jogador</button>
-                </div>
+                <!-- Utilizei h2 só para não ter que mudar a lógica js agora -->
+                <h2>Escalação do Time</h2>
             </header>
             <main>
+                <div class="buttons">
+                    <button onclick="escalarJogador()">Escalar Jogador</button>
+                    <button onclick="removerJogador()">Remover Último Jogador</button>
+                </div>
                 <div id="form"></div>
                 <div id="timeEscalado"></div>
             </main>
